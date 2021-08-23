@@ -1,0 +1,160 @@
+
+body{
+    background-color: #121212;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+ 
+}
+
+body{
+    font-family: "Merriweather Sans", sans-serif;
+    color: #4c6986;
+}
+
+.title{
+    max-width: 500px;
+    color: white;
+}
+
+.wrapper{
+    height: 550px;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px;
+}
+.button{
+    width: 175px;
+    height: 50px;
+    border: 1px solid #4c6986;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transition: all 0.2s ease;
+    margin-top: 32px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.button:hover{
+    background-color: #4c6986;
+    color: white;
+   
+
+
+}
+
+.header{
+    display: flex;
+    color: #9A9A9A;
+    font-size: 24px;
+}
+
+.header .player-X{
+    flex-grow: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+
+.player-X.active{
+    color: #42BED7;
+    border-color: #42BED7;
+}
+
+.tile-x{
+    color: #42BED7;
+}
+
+.header .player-O{
+    flex-grow: 1;
+    border-bottom: 5px solid #eee;
+    padding-bottom: 8px;
+}
+
+.player-O.active{
+
+    color: #D7BAFB;
+    border-color: #D7BAFB;
+}
+
+.tile-o {
+    color: #D7BAFB;
+}
+
+.game{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.board-title{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    font-size: 80px;
+    cursor: pointer;
+}
+.board-title:not(:nth-child(3n)){
+    border-right: 3px solid rgba(137,163,189, 0.7);
+}
+
+.board-title:not(:nth-last-child(-n+3)){
+    border-bottom: 3px solid rgba(137,163,189, 0.7);
+
+
+}
+.board-title:hover{
+    background: #eee;
+}
+
+.tile-winner span{
+    color: #23CE6B;
+    animation-duration: 1200ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation:blink 1200ms infinite; 
+}
+
+@keyframes blink {
+    from {
+        color:green;
+    }
+    to {
+        color:white;
+    }
+}
+@-webkit-keyframes blink {
+    from {
+        color:green;
+    }
+    to {
+        color:white;
+    }
+}
+
+

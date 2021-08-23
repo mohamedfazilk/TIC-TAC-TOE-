@@ -165,7 +165,7 @@ h1{
 
 
 
-@media(max-width: 350px){
+@media(max-width: 600px){
     .title h1{
       font-size: 25px;
       font-weight: bold;
@@ -197,6 +197,9 @@ h1{
 
 
 }
+
+
+
 
 
 

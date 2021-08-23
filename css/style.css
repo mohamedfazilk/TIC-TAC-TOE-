@@ -158,3 +158,42 @@ h1{
 }
 
 
+
+@media only screen and (max-width: 950px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .left-section{
+            margin-bottom: 50px;
+    }
+}
+
+.win{
+    font-size: large;
+    font-weight: 800;
+}
+
+.pot {
+    bottom: 15%;
+    position: absolute;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+  }
+  @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0;    
+    }
+  }
+
+  .name{
+
+    margin-bottom: 92px;
+  }
+
